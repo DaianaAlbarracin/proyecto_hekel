@@ -1,108 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hekel Amigurumi - Inicio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body id="grilla">
-  <header>
-     <div>
-    <a class="logo" href="../index.html"><img src="../image/logo.png" alt=""></a>
-    </div>
-    
-    <div class="titulo">
-      <h1>Hekel Amigurumi</h1>
-    </div>
-      <div class="subtitulo">
-        <h3>Muñecos hechos con amor</h3>
-    </div>
-    <nav class="navbar">
-        <ul class="menu"> 
-            <li class="menu__item">
-                <a class="menu_link" href="./pages/haz_tu_pedido.html">Haz tu pedido</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu_link" href="./pages/productos.html">Productos</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu_link" href="./pages/contacto.html">Contacto</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu_link" href="./index.html">Información</a>
-            </li>
-        </ul>    
-    </nav>
-    <nav class="cuenta_nav">
-        <ul class="cuenta">
-            <li class="inicia_sesion">
-            <a class="sesion_item" href="./pages/iniciar_sesion.html">Inicia sesion</a>
-            </li>
-            <li class="crea_cuenta">
-            <a class="sesion_item" href="./pages/iniciar_sesion.html">Crea cuenta</a>
-          </li>
-        </ul>
-    </nav>
- </header>
-    <main> 
-     <section id="section_uno">
-      <div class="pregu_uno">
-        <h1>¿Que es un Amigurumi?</h1>
-      </div>
-      <div class="resp_uno"><p>
-        <h2>El término amigurumi, un acrónimo en japonés, compuesto de: ami, "tejido", y nuigurumi, "muñeco de peluche", es una tendencia o moda japonesa que consiste en tejer pequeños muñecos mediante técnicas de croché o ganchillo.2​ Los amigurumis tienen forma principalmente de animales como osos, conejos, gatos o perros, pero también adquieren otras formas como comidas, plantas e incluso accesorios como bolsos, bisutería, etcétera.
 
-      </h2></p>
+<body>
+  <header class="header">
+    <div>
+      <h1 class="nombre">Hekel Amigurumi</h1>
+    </div>
+    <div class="subtitulo"> Muñecos hechos con amor
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a href="../mi_sitio/index.html"><img src="../mi_sitio/image/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="menu_link" href="./pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="menu_link" href="./pages/haz_tu_pedido.html">Haz tu pedido</a>
+            </li>
+            <li class="nav-item">
+              <a class="menu_link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button type="button" class="btn btn-outline-info">
+              <a class="sesion_item" href="./pages/iniciar_sesion.html">Inicia sesion</a></button>
+            <button type="button" class="btn btn-outline-info">
+              <a class="sesion_item" href="./pages/iniciar_sesion.html">Crear Cuenta</a></button>
+          </div>
+        </div>
       </div>
-      <div class="preg_dos"> 
-        <h1>¿Quienes somos?</h1>
+    </nav>
+  </header>
+  <main class="d-main">
+    <section id="section_uno">
+      <div class="pregu_uno">
+        ¿Que es un Amigurumi?</div>
+      </div>
+      <div class="resp_uno">
+        <p>
+          El término amigurumi, un acrónimo en japonés, compuesto de: ami, "tejido", y nuigurumi, "muñeco de peluche",
+          es una tendencia o moda japonesa que consiste en tejer pequeños muñecos mediante técnicas de croché o
+          ganchillo.Los amigurumis tienen forma principalmente de animales como osos, conejos, gatos o perros, pero
+          también adquieren otras formas como comidas, plantas e incluso accesorios como bolsos, bisutería, etcétera.
+        </p>
+      </div>
+      <div class="preg_dos">
+        ¿Quienes somos?
       </div>
       <div class="resp_dos">
-        <h2>Nosotros somos una emprendedores de la ciudad de Rosario. Nos dedicamos a la venta online de amigurumis, contamos con una experiencia de 20 años</h2>
+        <p>Nosotros somos una emprendedores de la ciudad de Rosario. Nos dedicamos a la venta online de amigurumis,
+          contamos con una experiencia de 20 años</p>
       </div>
       <div class="historia_t">
-        <h1>Nuestra historia</h1>
+        Nuestra historia
       </div>
-      <divc class="historia_p">
-        <h2>uisquam eligendi, consequuntur ecto tenetur corrupti distinctio!</h2>
+      <div class="historia_p">
+        <p>uisquam eligendi, consequuntur ecto tenetur corrupti distinctio!</p>
       </div>
     </section>
     <section id="section_dos">
-     <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+      <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./image/coneja.jpg" class="d-block w-100" alt="foto paisaje">
-            </div>
-            <div class="carousel-item">
-                <img src="./image/ramo.jpg" class="d-block w-100" alt="foto paisaje">
-            </div>
-            <div class="carousel-item">
-                <img src="./image/Captura de pantalla 2022-11-22 190346.jpg" class="d-block w-100" alt="foto paisaje">
-            </div>
+          <div class="carousel-item active">
+            <img src="./image/coneja.jpg" class="d-block w-100" alt="foto paisaje">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/ramo.jpg" class="d-block w-100" alt="foto paisaje">
+          </div>
+          <div class="carousel-item">
+            <img src="./image/Captura de pantalla 2022-11-22 190346.jpg" class="d-block w-100" alt="foto paisaje">
+          </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
         </button>
-    </div>
-         </section>
-      
-    </main>
-    <footer>
-      <h6 class="copy">Copyright © 2022 hekelamigururumi.com™. Todos los derechos reservados.
-      </h6>
-    </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <p class="copy">Copyright © 2022 hekelamigururumi.com™. Todos los derechos reservados.
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
 
 
 
