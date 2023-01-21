@@ -319,7 +319,40 @@ header {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/* productos*/
+.subp{
+    text-align: center;
+    color: #270a0d;
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+.imagenesg {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 25px;
+}
+.nameimg{
+    color: #F58F9A;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    margin: 5px;
+}
+.col-lg-4{
+    padding: 30px;
+}
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+}
 footer {
     display: flex;
     margin-top: auto;
