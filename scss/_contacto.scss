@@ -1,0 +1,110 @@
+.d-contacto {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.redes__sociales {
+    color: $color-negro;
+    font-size: 35px;
+    font-family: $tipo-letra;
+
+.d-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.redes {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp {
+    color: green;
+    margin: 0 10px;
+}
+
+.instagram {
+    color: $violeta;
+    margin: 0 10px;
+}
+.facebook{
+    margin: 0 10px;
+}
+}
+
+.form {
+    color:$blanco;
+    background: transparent;
+    overflow: hidden;
+    border-top: 3px solid rgba(241, 83, 215, 0.5);
+    border-right: 3px solid rgba(99, 58, 146, 0.5);
+    border-bottom: 3px solid rgba(61, 39, 189, 0.5);
+    border-left: 3px solid rgba(199, 90, 209, 0.781);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.form-p{
+    color: $color-negro;
+    font-size: 20px;
+    font-family: $tipo-letra;
+
+}
+.top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(90deg,
+            transparent 50%,
+            rgba(138, 14, 155, 0.5),
+            rgb(20, 52, 192));
+}
+
+.bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(90deg,
+            rgb(57, 255, 20),
+            rgba(57, 255, 20, 0.5),
+            transparent 50%);
+}
+
+.right {
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 0;
+    background: linear-gradient(180deg,
+            transparent 30%,
+            rgba(156, 22, 156, 0.5),
+            rgb(148, 8, 113));
+}
+
+.left {
+    left: 0;
+    bottom: 0;
+    width: 6px;
+    height: 0;
+    background: linear-gradient(180deg,
+            rgb(250, 113, 255),
+            rgba(224, 9, 160, 0.5),
+            transparent 70%);
+}
+
+.form {
+    bottom: 0;
+    color: $color-negro;
+}
+.btn-outline-light {
+    @include recuadro;
+}

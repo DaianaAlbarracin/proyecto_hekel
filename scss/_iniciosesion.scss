@@ -1,0 +1,26 @@
+
+.titulo_sesion {
+    text-align: center;
+    margin-top: 0%;
+    color: black;
+    font-size: 40px;
+    font-family: $tipo-letra;
+}
+
+
+.main-inicio {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.forminicio {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

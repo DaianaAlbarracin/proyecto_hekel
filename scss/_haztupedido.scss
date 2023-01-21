@@ -1,0 +1,15 @@
+.mainpedidos {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img-fluid{ 
+   padding: 5px;
+   margin: 5px;
+}
+.sectionpedidos{
+    font-family: $tipo-letra;
+    
+}

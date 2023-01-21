@@ -1,0 +1,45 @@
+@mixin reset{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@mixin reseteo-lista{
+        list-style: none;
+        text-decoration: none;}
+@mixin nav-horizontal{
+    ul{ @include reseteo-lista}
+        li {
+        padding: 1.5rem;
+        color: $color-negro;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: $tipo-letra;
+        }
+    }
+
+@mixin flexbox($center, $wrap, $center, $center, $row) {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    padding: 25px;
+}
+@mixin git {
+    --bs-btn-color: #35163ee3;
+    --bs-btn-border-color: $color-rosas;
+    --bs-btn-hover-color: $negro;
+    --bs-btn-hover-bg: $color-rosa;
+    --bs-btn-hover-border-color: $blanco;
+    --bs-btn-focus-shadow-rgb: 248,249,250;
+    --bs-btn-active-color: $negro;
+    --bs-btn-active-bg: $blanco;
+    --bs-btn-active-border-color: $violeta;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: $blanco;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: $blanco;
+    --bs-gradient: none;
+}
