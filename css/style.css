@@ -12,7 +12,8 @@ ul {
     list-style: none;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 body{
     display: flex;
     flex-direction: column;
@@ -63,8 +64,15 @@ header {
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-.nombre {
+.namepag{
+    color: #3C363B;
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+.tituloxpag {
     text-align: center;
     margin-top: 0%;
     color: black;
@@ -145,13 +153,6 @@ header {
 
 /* pagina contacto */
 
-.contacto {
-    text-align: center;
-    color: #270a0d;
-    font-size: 50px;
-    font-family: 'Poppins', sans-serif;
-
-}
 .d-contacto {
     display: flex;
     justify-content: space-around;
@@ -320,12 +321,6 @@ header {
     font-family: Arial, Helvetica, sans-serif;
 }
 /* productos*/
-.subp{
-    text-align: center;
-    color: #270a0d;
-    font-size: 50px;
-    font-family: 'Poppins', sans-serif;
-}
 .imagenesg {
     display: flex;
     width: 80%;
@@ -353,6 +348,23 @@ header {
     justify-content: center;
     align-items: center;
 }
+/*pedidos*/
+.mainpedidos {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img-fluid{ 
+   padding: 5px;
+   margin: 5px;
+}
+.sectionpedidos{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
 footer {
     display: flex;
     margin-top: auto;
