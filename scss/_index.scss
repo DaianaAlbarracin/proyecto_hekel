@@ -5,7 +5,7 @@ body {
     @include reset;
 }
 
-header {
+.headerb {
     background: rgb(255, 255, 255);
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 8%, rgba(245, 143, 154, 1) 100%);
 
@@ -61,9 +61,6 @@ a {
 }
 
 
-
-
-
 .d-main{
         display: flex;
         flex-direction: row-reverse;
@@ -115,7 +112,7 @@ a {
     
 
 
-footer {
+.footerb {
     display: flex;
     margin-top: auto;
     text-align: center;
