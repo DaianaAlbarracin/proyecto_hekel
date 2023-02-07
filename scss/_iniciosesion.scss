@@ -1,82 +1,129 @@
-$d: 70;      
-$w: 600;     
-$s: 3s;      
-
-
-$grad: ();
-@for $i from 0 to $d {
-  $v: random(4) + 2;
-  $a: random(5) * .1 + .5;
-  $grad: $grad, radial-gradient(
-      $v+px $v+px at
-      (random($w - $v * 2) + $v)+px
-      (random($w - $v * 2) + $v)+px, 
-      rgba(255,255,255,$a) 50%,
-      rgba(0,0,0,0)
-  ) !global;
+html {
+  height:100%;
 }
 
+body {
+  margin:0;
+}
 
-.iniciob {
-  @include reset;
-  height: 100%;
-  background: linear-gradient(#f9ebf2 30%, #c593a4);
-  overflow: hidden;
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(39deg, #fcd7da 50%, #f9ebf2 50%);
+    bottom: 0;
+    left: -50%;
+    opacity: .5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
 }
-.snow, .snow:before, .snow:after {
-  position: absolute;
-  top: -$w + px;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-image: $grad;
-  background-size: $w + px $w + px;
-  animation: snow $s linear infinite;
-  content: "";
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
 }
-.snow:after {
-  margin-left: -$w/3 + px;
-  opacity: .4;
-  animation-duration: $s*2;
-  animation-direction: reverse;
-  filter: blur(3px);
+
+.bg3 {
+  animation-duration:5s;
 }
-.snow:before {
-  animation-duration: $s*3;
-  animation-direction: reverse;
-  margin-left: -$w/2 + px;
-  opacity: .65;
-  filter: blur(1.5px);
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
 }
-@keyframes snow {
-  to {
-    transform: translateY($w + px);
+
+h1 {
+  font-family:monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
   }
 }
-
+ .headerinicio{
+    text-align:center;
+    margin: 20px;
+  padding: 20px;
+  .botoninicio{
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    @include botonesinicio;
+    
+    a{ font-family: $tipo-letra;
+       text-decoration: none;}
+       color: $color-negro;
+  }
+  .textoheader{
+    color: $blanco;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    font-family: 'Comfortaa', cursive;
+    .tituloinicio{
+      font-size: 45px;
+    }
+  }
+  }
 
 .titulo_sesion {
   text-align: center;
   margin-top: 0%;
-  color: black;
+  color: $color-negro;
   font-size: 40px;
-  font-family: $tipo-letra;
+
 }
 
 .forminicio {
   display: flex;
   text-align: center;
   text-align: center;
-  color: black;
+  color: $color-negro;
   font-family: $tipo-letra;
+
   font-size: 30px;
   padding: 30px;
   margin: 10px;
   border: 5px;
-  border-style: solid;
-  border-color: black;
   flex-wrap: wrap;
   flex-direction: column;
+  
+  .form-label{
+  font-size: 25px;
+  }
+  .text-divider {
+    display: flex;
+    align-items: center;
+    --text-divider-gap: 1rem; // set a customizable gap between label and lines
+  }
+  
+  .text-divider::before,
+  .text-divider::after {
+    content: '';
+    height: 1px;
+    background-color: silver;
+    flex-grow: 1;
+  }
+  
+  .text-divider::before {
+    margin-right: var(--text-divider-gap);
+  }
+  
+  .text-divider::after {
+    margin-left: var(--text-divider-gap);
+  }
+
+  .btn-outline-info {
+    @include botonesinicio
+}
+
+form{
+  margin: 10px;
+   padding: 5px;}
 }
 
 .main-inicio {
@@ -85,4 +132,9 @@ $grad: ();
   align-items: center;
   align-content: center;
   flex-direction: column;
+}
+.footerinicio{
+  text-align: center;
+  margin:  20px;
+  font-size: 1rem;
 }
