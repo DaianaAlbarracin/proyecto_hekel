@@ -74,6 +74,24 @@
     }
 
 
+    @media (max-width: 425px) and (min-width: 320px){
+        .tituloxpag{
+            font-size: 40px;
+        }
+        .galeria .col {
+            width: 20rem;
+            margin: 0px;
+            padding: 15px;
+        } 
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
 
 
 

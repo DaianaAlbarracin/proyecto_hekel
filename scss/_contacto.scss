@@ -125,3 +125,11 @@ font-size: 5rem;
     padding: 10px;
 }
 }
+
+
+
+@media (max-width: 425px) and (min-width: 320px){
+    .d-contacto .contactoinfo .redes {
+        font-size: 4rem;
+    }
+}
