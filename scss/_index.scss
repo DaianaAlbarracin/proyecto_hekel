@@ -1,27 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
 body {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     @include reset;
 }
 
 .headerb {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 8%, rgba(245, 143, 154, 1) 100%);
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background: url(../image/sintitulo1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Comfortaa', cursive;
+    flex-direction: column;
+    align-content: stretch;
+    flex-wrap: wrap;
 
-.logo{
-    width: 15px;
-}
-h1 {
+
+    .textoheader {
+        margin: 20px;
+        padding: 20px;
+        color: $blanco;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 1);
+    }
+
+    .titulo {
+        color: $blanco;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+.navbar{
+    background-color: #f9ebf2;
+    padding: 0%;
+    a {
+    text-decoration: none;
     color: $color-negro;
-    font-size: 50px;
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-    font-family: $tipo-letra;
-
 }
-.btn-outline-info{
+
+.btn-outline-info {
     --bs-btn-color: #f58f9a;
     --bs-btn-border-color: #f7f7f7;
     --bs-btn-hover-color: #f7f7f700;
@@ -36,98 +59,91 @@ h1 {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: #f58f9a;
     --bs-gradient: none;
-}
-
-
-.subtitulo {
-    text-align: center;
-    color: $color-negro;
-    font-size: 20px;
-    font-family: $tipo-letra
-}
-
-a {
-    text-decoration: none;
-}
-@include nav-horizontal; 
-
-.tituloxpag {
-    text-align: center;
-    margin-top: 0%;
-    color: $color-negro;
-    font-size: 40px;
-    font-family:  $tipo-letra;
+    img{
+        height: 90px;
+    }
 }
 }
 
 
-.d-main{
+
+
+@include nav-horizontal;
+
+}
+
+
+
+
+.d-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+    #section_uno {
+        width: 100%;
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
         justify-content: center;
         align-items: center;
-        align-content: center;
     }
-    section {
-        #section_uno {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .tituloxpag {
-            color: $color-negro;
-            font-size: 50px;
-            text-align: center;
-            padding: 5px;
-            margin: 5px;
-            font-family: $tipo-letra;
-        }
-
-        .resp {
-            color: $color-negro;
-            font-size: 20px;
-            font-family: $tipo-letra;
-            padding: 5px;
-            margin: 15px;
-        }
-
-        .preg {
-            color: $color-rosa;
-            font-size: 30px;
-            font-family: $tipo-letra;
-            padding: 5px;
-            margin: 15px;
-
-        }
-    }
-
     #section_dos {
-            padding: 2rem;
-            flex-basis: 100vw;
-            flex-grow: 1;
-            display: flex;
-            flex-wrap: wrap;
-        }
-    
+        padding: 10px;
+        width: 60%;
+        margin: 20px;
+    }
+  
 
 
-.footerb {
-    display: flex;
-    margin-top: auto;
-    text-align: center;
-    height: 10vh;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 8%, rgba(245, 143, 154, 1) 100%);
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center;
-
-    p {
-        display: flex;
-        justify-content: flex-start;
+   
+    .tituloxpag {
+        color: $color-negro;
+        font-size: 50px;
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+        font-family: $tipo-letra;
     }
 
+    .resp {
+        color: $color-negro;
+        font-size: 20px;
+        font-family: $tipo-letra;
+        padding: 5px;
+        margin: 15px;
+    }
+
+    .preg {
+        color: $color-rosa;
+        font-size: 30px;
+        font-family: $tipo-letra;
+        padding: 5px;
+        margin: 15px;
+
+    }
+
+
+
+
+
+footer{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    margin-top: 5px;
+    padding: 5px;
+.carru1{
+    width: 1000px;
 }
+}
+   

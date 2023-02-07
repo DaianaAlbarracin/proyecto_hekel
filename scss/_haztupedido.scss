@@ -1,15 +1,21 @@
 .mainpedidos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: stretch;
     justify-content: center;
     flex-wrap: wrap;
-}
+    align-items: stretch;
+
 .img-fluid{ 
    padding: 5px;
    margin: 5px;
 }
 .sectionpedidos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
     font-family: $tipo-letra;
     
+}
 }

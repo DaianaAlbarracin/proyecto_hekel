@@ -7,18 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hekel Amigurumi - Inicio</title>
   <meta name="description" content="¡Haz tu pedido y te lo enviamos gratis a tu casa!">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header class="headerb">
-    <div>
-      <h1 class="namepag">Hekel Amigurumi</h1>
-    </div>
-    <div class="subtitulo"> Muñecos hechos con amor
-    </div>
+  <header class="headerb ">
+
+    <section class="textoheader">
+      <div class="titulo">
+        <h1 class=" animate__animated animate__slideInDown"> Bienvenidos a Hekel Amigurumi</h1>
+      </div>
+      <div class="subtitulo animate__animated animate__slideInUp"> Muñecos hechos con amor
+      </div>
+    </section>
+
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a href="./index.html"><img src="./image/logo.png" alt="logo"></a>
@@ -49,12 +54,15 @@
           </div>
         </div>
       </div>
+
     </nav>
+
   </header>
   <main class="d-main">
+
     <section id="section_uno">
       <div class="preg">
-        ¿Que es un Amigurumi?</div>
+        ¿Qué es un Amigurumi?</div>
       </div>
       <div class="resp">
         <p>
@@ -65,17 +73,20 @@
         </p>
       </div>
       <div class="preg">
-        ¿Quienes somos?
+        ¿Qué es Hekel?
       </div>
       <div class="resp">
-        <p>Nosotros somos una emprendedores de la ciudad de Rosario. Nos dedicamos a la venta online de amigurumis,
-          contamos con una experiencia de 20 años</p>
+        <p>Hekel significa croché en Afrikáans, pero podemos entenderlo como un lugar donde todo es al crochet y
+          cualquier cosita que quieras podemos hacerla. ¡Tambien tenemos algunos diseños a la venta, visita nuestra
+          tienda para verlos!</p>
       </div>
       <div class="preg">
         Nuestra historia
       </div>
       <div class="resp">
-        <p>uisquam eligendi, consequuntur ecto tenetur corrupti distinctio!</p>
+        <p>Este emprendimiento surgió porque cuando nació mi sobrina quise hacerle algún regalito hecho por mi, asi que
+          me puse mano a la obra; y me gusto tanto tejer peluches que quise expandirme un poco más empezando este
+          hermoso emprendimiento.</p>
       </div>
     </section>
     <section id="section_dos">
@@ -106,9 +117,22 @@
 
   </main>
   <footer>
-    <p class="copy">Copyright © 2022 hekelamigururumi.com™. Todos los derechos reservados.
-    </p>
-  </footer class="footerb">
+    <section class="carru1">
+      <div id="carru" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../contenedor/image/carru.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../contenedor/image/carru2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../contenedor/image/carru3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>

@@ -1,44 +1,59 @@
+$d: 70;      
+$w: 600;     
+$s: 3s;      
+
+
+$grad: ();
+@for $i from 0 to $d {
+  $v: random(4) + 2;
+  $a: random(5) * .1 + .5;
+  $grad: $grad, radial-gradient(
+      $v+px $v+px at
+      (random($w - $v * 2) + $v)+px
+      (random($w - $v * 2) + $v)+px, 
+      rgba(255,255,255,$a) 50%,
+      rgba(0,0,0,0)
+  ) !global;
+}
+
+
 .iniciob {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  box-sizing: border-box;
   @include reset;
   height: 100%;
+  background: linear-gradient(#f9ebf2 30%, #c593a4);
   overflow: hidden;
-
-  background:
-    radial-gradient(circle at bottom, $white, transparent 80%),
-    linear-gradient(to top, dodgerblue 0%, transparent 70%),
-    linear-gradient(to bottom, transparent, rgba($white, 0.4) 70%),
-    $blue;
-  animation: bg 30s infinite;
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-around;
-  align-items: stretch;
+}
+.snow, .snow:before, .snow:after {
+  position: absolute;
+  top: -$w + px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: $grad;
+  background-size: $w + px $w + px;
+  animation: snow $s linear infinite;
+  content: "";
+}
+.snow:after {
+  margin-left: -$w/3 + px;
+  opacity: .4;
+  animation-duration: $s*2;
+  animation-direction: reverse;
+  filter: blur(3px);
+}
+.snow:before {
+  animation-duration: $s*3;
+  animation-direction: reverse;
+  margin-left: -$w/2 + px;
+  opacity: .65;
+  filter: blur(1.5px);
+}
+@keyframes snow {
+  to {
+    transform: translateY($w + px);
+  }
 }
 
-@keyframes bg {
-
-  0%,
-  100% {
-    background-color: $blue;
-  }
-
-  25% {
-    background-color: $green;
-  }
-
-  50% {
-    background-color: $yellow;
-  }
-
-  75% {
-    background-color: $pink;
-  }
-}
 
 .titulo_sesion {
   text-align: center;
@@ -70,15 +85,4 @@
   align-items: center;
   align-content: center;
   flex-direction: column;
-}
-
-footer {
-  display: flex;
-  margin-top: auto;
-  text-align: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  align-content: space-around;
-  align-items: center;
 }
