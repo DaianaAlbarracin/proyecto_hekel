@@ -77,3 +77,19 @@
         --bs-btn-disabled-border-color: #d9afb3;
         --bs-gradient: none;
 }
+@mixin navboton{
+    --bs-btn-color: #f58f9a;
+    --bs-btn-border-color: #f7f7f7;
+    --bs-btn-hover-color: #f7f7f700;
+    --bs-btn-hover-bg: #ffffff;
+    --bs-btn-hover-border-color: #f58f9a;
+    --bs-btn-focus-shadow-rgb: 13, 202, 240;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #0dcaf0;
+    --bs-btn-active-border-color: #0dcaf0;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #be97d7;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #f58f9a;
+    --bs-gradient: none;
+}
